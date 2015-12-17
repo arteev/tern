@@ -12,4 +12,4 @@ script:
  
  
 script:
-  - $HOME/gopath/bin/goveralls -coverprofile= -v -repotoken wW2PpiBbqtJ8BoUqMA7P4ZZsBGyurVXpx
+  - $HOME/gopath/bin/goveralls -coverprofile= -v -repotoken RmpLkMy1APaZm8hDCcshn3fio5J0gz1zc
