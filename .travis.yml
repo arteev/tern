@@ -4,7 +4,12 @@ go:
  - release
  - tip
 
+before_install:
+  - go get github.com/axw/gocov/gocov
+  - go get github.com/mattn/goveralls
+  - if ! go get github.com/golang/tools/cmd/cover; then go get golang.org/x/tools/cmd/cover; fi
 script:
-  - go get
-  - go test -v ./...
-  - go build
+ 
+ 
+script:
+  - $HOME/gopath/bin/goveralls -coverprofile= -v -repotoken wW2PpiBbqtJ8BoUqMA7P4ZZsBGyurVXpx
