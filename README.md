@@ -30,6 +30,16 @@ Example:
    }
 ```
 
+```go
+   package main 
+   import (
+      	"fmt"
+      	"github.com/arteev/tern"
+      )
+   func main() {
+     fmt.Println(tern.Decode(0,-1,"less",1,"great","zero"))
+   }
+```
 License
 -------
 
