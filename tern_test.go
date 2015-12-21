@@ -48,6 +48,15 @@ func TestDecode(t *testing.T) {
 		0:nil,
 		100:nil,
 	},1,"one",2,"two")
+
+	doTestdecode(t,map[int] interface{} {
+		1:nil,
+		0:nil,
+	},2,"two")
+
+	doTestdecode(t,map[int] interface{} {
+		1:nil,
+	},2,"two",nil)
 }
 
 func BenchmarkDecode(b *testing.B){
