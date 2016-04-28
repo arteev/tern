@@ -64,3 +64,20 @@ func BenchmarkDecode(b *testing.B){
 		tern.Decode("test","test2","value3","test3","value3","test","tryvalue","default")
 	}
 }
+
+
+func TestNvl(t *testing.T){
+	var val interface{}
+	
+	val = tern.Nvl("test","def")
+	if val!="test" {
+		t.Errorf("Excepted %q,got %v", "test",val);
+	}
+	
+	var nilval interface{}
+	val = tern.Nvl(nilval,"default value")
+	if val!="default value" {
+		t.Errorf("Excepted %q,got %v", "default value",val);
+	}
+	
+}
