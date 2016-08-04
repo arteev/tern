@@ -84,7 +84,7 @@ func TestNvl(t *testing.T) {
 func TestCoalesce(t *testing.T) {
 	var val interface{}
 	var expr1 = "test"
-	var expr2 interface{} = nil
+	var expr2 interface{}
 
 	val = tern.Coalesce(nil, nil)
 	if val != nil {
