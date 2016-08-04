@@ -2,6 +2,7 @@
 
 [![Build Status](https://travis-ci.org/arteev/tern.svg?branch=master)](https://travis-ci.org/arteev/tern)
 [![Coverage Status](https://coveralls.io/repos/arteev/tern/badge.svg?branch=master&service=github)](https://coveralls.io/github/arteev/tern?branch=master)
+[![GoDoc](https://godoc.org/github.com/arteev/tern?status.png)](https://godoc.org/github.com/arteev/tern)
 
 Description
 -----------
